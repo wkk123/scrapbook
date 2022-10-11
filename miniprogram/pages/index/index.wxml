@@ -45,4 +45,9 @@
       </view>
     </view>
   </view>
+  <movable-area class="movable_area">
+    <movable-view class="max" direction="all">
+      <image class="movable_edit" src="./../../assets/image/edit.png"></image>
+    </movable-view>
+  </movable-area>
 </view>
