@@ -1,0 +1,48 @@
+<!--index.wxml-->
+<view class="account">
+  <view class="account_box">
+    <text class="account_title">手账</text>
+    <picker
+      class="account_picker"
+      mode="date"
+      value="{{date}}"
+      fields="month"
+      bindchange="bindDateChange"
+    >
+      <view class="picker">{{date}}</view>
+    </picker>
+  </view>
+  <view class="account_card">
+    <view class="card_box">
+      <view class="card_item">
+        <text class="item_title">{{10}}月收入</text>
+        <text class="item_money">￥{{1000}}</text>
+      </view>
+      <view class="card_item">
+        <text class="item_title">{{10}}月支出</text>
+        <text class="item_money">￥{{1000}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="account_list">
+    <view class="list_item" wx:for="{{list}}" wx:for-item="item" wx:key="index">
+      <view class="item_top">
+        <view class="top_time">{{item.date}}</view>
+        <view class="top_money">
+          <text>收入{{item.income}}</text>
+          <text>支出{{item.expend}}</text>
+        </view>
+      </view>
+      <view class="item_bottom">
+        <view class="bottom_left">
+          <image class="bottom_icon" src="./../../assets/image/icon{{item.type}}.png"></image>
+          <view class="bottom_text">
+            <text class="account_class">{{accountType[item.type]}}</text>
+            <text>{{item.name}}</text>
+          </view>  
+        </view>
+        <text class="bottom_money">{{item.money}}</text>
+      </view>
+    </view>
+  </view>
+</view>

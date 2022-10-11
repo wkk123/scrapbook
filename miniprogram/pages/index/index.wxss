@@ -1,0 +1,121 @@
+/**index.wxss**/
+.account{
+  width: 100vw;
+  height: 100vh;
+  background-color: #F3F5F6;
+  overflow-y: auto;
+}
+.account_box {
+  width: 100%;
+  height: 200rpx;
+  background-color: #1890FF;
+  padding: 10rpx 20rpx;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 28rpx;
+}
+.account_title{
+  font-size: 36rpx;
+  font-weight: 500;
+  color: #ffffff;
+}
+.account_picker{
+  width: 160rpx;
+  height: 40rpx;
+  margin-top: 30rpx;
+}
+.account_card{
+  width: calc(100% - 40rpx);
+  height: 200rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: -40rpx;
+}
+.card_box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card_item{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+.item_title{
+  font-size: 28rpx;
+}
+.item_money{
+  font-size: 40rpx;
+  font-weight: 400;
+  padding-top: 10rpx;
+}
+.account_list{
+  width: 100%;
+  height: auto;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+.list_item{
+  width: calc(100% - 60rpx);
+  height: 180rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  overflow: hidden;
+  padding: 20rpx 30rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.item_top,.item_bottom{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.item_top{
+  color: #8C8C8C;
+  font-size: 28rpx;
+}
+.top_money{
+  width: 200rpx;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom_left{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 28rpx;
+  color: #8C8C8C;
+}
+.account_class{
+  font-size: 32rpx;
+  color: #262626;
+}
+.bottom_icon{
+  width: 56rpx;
+  height: 56rpx;
+  margin-right: 10rpx;
+}
