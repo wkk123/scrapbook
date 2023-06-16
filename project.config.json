@@ -1,5 +1,5 @@
 {
-  "description": "项目配置文件",
+  "description": " 手账",
   "packOptions": {
     "ignore": [],
     "include": []
@@ -15,7 +15,8 @@
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "condition": false
   },
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},

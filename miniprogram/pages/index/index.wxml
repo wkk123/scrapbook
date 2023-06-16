@@ -45,8 +45,9 @@
       </view>
     </view>
   </view>
+  <!-- 添加按钮 -->
   <movable-area class="movable_area">
-    <movable-view class="max" direction="all">
+    <movable-view class="max" direction="all" bindtap="goToAdd" >
       <image class="movable_edit" src="./../../assets/image/edit.png"></image>
     </movable-view>
   </movable-area>

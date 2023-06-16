@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="add">
+  <form catchsubmit="formSubmit">
+    <view class="add_list">
+      <view class="list_item">
+        <text class="add_label">金额</text>
+        <input class="add_content" name="money" type="digit" placeholder="请输入金额" />
+      </view>
+      <view class="list_item">
+        <text class="add_label">类型</text>
+        <radio-group name="mold">
+          <label><radio color="#4E84EC" value="1"/>收入</label>
+          <label style="margin-left: 30rpx"><radio color="#4E84EC" value="2"/>支出</label>
+        </radio-group>
+      </view>
+      <view class="list_item">
+        <text class="add_label">分类</text>
+        <picker
+          class="add_content"
+          mode="selector"
+          name="type"
+          range="{{selectorType}}"
+          range-key='name'
+          bindchange="bindTypeChange"
+        >
+          <view class="picker">{{selectorType[typeIndex].name}}</view>
+        </picker>
+      </view>
+      <view class="list_item">
+        <text class="add_label">日期</text>
+        <picker
+          class="add_content"
+          mode="date"
+          name="date"
+          value="{{date}}"
+          fields="month"
+          bindchange="bindDateChange"
+        >
+          <view class="picker">{{date}}</view>
+        </picker>
+      </view>
+      <view class="list_item">
+        <text class="add_label">备注</text>
+        <input class="add_content" name="name" placeholder="备注" />
+      </view>
+    </view>
+
+    <view class="btn-area">
+      <button class="btn-add" size="default" formType="submit">保存</button>
+    </view>
+  </form>
+</view>

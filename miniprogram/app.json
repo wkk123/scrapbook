@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/add/index",
     "pages/index/index",
     "pages/mine/mine"
   ],
